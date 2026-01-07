@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TOP GEOMETRY DASH</title>
+  <!-- ✅ Esto hace que se adapte al ancho del dispositivo -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(9, 5, 61);
+      padding: 1rem;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: clamp(1.8rem, 5vw, 2.5rem); /* escala automático */
+    }
+
+    ol {
+      width: 100%; /* ocupa todo el ancho */
+      margin: auto;
+      padding: 0;
+      list-style: none;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.05);
+    }
+
+    li {
+      padding: 1rem;
+      border-top: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: clamp(1.2rem, 4vw, 1.6rem); /* escala automático */
+    }
+
+    .bandera {
+      height: clamp(24px, 6vw, 32px); /* bandera se adapta */
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+
+    .score-red   { color: red;   font-weight: bold; }
+    .score-blue  { color: blue;  font-weight: bold; }
+    .score-green { color: green; font-weight: bold; }
+    .score-white { color: white; font-weight: bold; text-shadow: 0 0 2px black; }
+
+    /* 📱 Ajustes para pantallas pequeñas */
+    @media (max-width: 600px) {
+      li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .score-red, .score-blue, .score-green, .score-white {
+        margin-top: 0.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>TOP GEOMETRY DASH</h1>
+  <ol>
+    <li>
+      <span>#1 Lemes Elian Benjamín 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg" 
+             alt="Bandera de Israel" class="bandera">
+      </span>
+      <span class="score-red">Puntuación: 540</span>
+    </li>
+    <li>
+      <span>#2 Justin Toribio Romero 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" 
+             alt="Bandera de Estados Unidos" class="bandera">
+      </span>
+      <span class="score-blue">Puntuación: 250</span>
+    </li>
+    <li>
+      <span>#3 Berardone Emanuel 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg" 
+             alt="Bandera de Italia" class="bandera">
+      </span>
+      <span class="score-green">Puntuación: 150</span>
+    </li>
+    <li>
+      <span>#4 Yamil Contreras 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg" 
+             alt="Bandera de Arabia Saudita" class="bandera">
+      </span>
+      <span class="score-white">Puntuación: 95</span>
+    </li>
+    <li>
+      <span>#5 Demian Burgos 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg" 
+             alt="Bandera de Grecia" class="bandera">
+      </span>
+      <span class="score-white">Puntuación: 80</span>
+    </li>
+  </ol>
+</body>
+</html>
